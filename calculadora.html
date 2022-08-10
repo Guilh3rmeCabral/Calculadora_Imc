@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="tela-principal">
+        <h1>Calculadora de Imc</h1>
+        <form action="" method="POST" id="formulario">
+            <div class="form-group">
+                <label >Nome</label>
+                <input type="text" name="nome" id="nome" class="input" autofocus required>
+            </div>
+            <div class="form-group">
+                <label for="Idade">Idade</label>
+                <input type="number" name="idade" id="idade" class="input" min="0" max="130" required>
+            </div>
+            <div class="form-group">
+                <label for="peso">Peso</label>
+                <input type="number" name="peso" id="peso" class="input" step="0.01" min="0.0" max="500.0" required>
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura</label>
+                <input type="number" name="altura" id="altura" class="input" step="0.01" min="0.0" max="2.70" required>
+            </div>
+
+            <!-- Botões -->
+            <div class="form-group">
+                <button type="submit" class="botao" id="btnEnviar">Enviar</button>
+                <button type="submit" class="botao" id="btnLimpar">Limpar</button>
+            </div>
+            <div class="form-group">
+                <label for="imc">IMC</label>
+                <input
+                    type="number"
+                    name="imc"
+                    id="resultadoImc"
+                    class="input"
+                    value='0.0'
+                    disabled
+                />
+                <span id='aviso'></span>
+            </div>
+        </form>
+        <div id='resultado'>
+            <h2 id='id' class='pessoa'>IMC</h2>
+            <p id='nome' class='pessoa'></p>
+            <p id='idade' class='pessoa'></p>
+            <p id='peso' class='pessoa'></p>
+            <p id='altura' class='pessoa'></p>
+            <p id='imc' class='pessoa'></p>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
