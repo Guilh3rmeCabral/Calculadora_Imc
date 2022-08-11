@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#tela-principal {
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.form-group {
+    padding: 10px;
+    position: relative;
+}
+
+.form-group label {
+    display: inline-block;
+    
+}
+.form-group input {
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 3px;
+}
+.form-group span {
+    font-size: 12px;
+}
