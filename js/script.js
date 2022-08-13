@@ -44,7 +44,7 @@ btnEnviar.addEventListener('click', function(e) {
     }
     
     console.log(pessoa)
-    dados[1].innerHtml = pessoa.nome + "rs"
+    dados[1].textContent = pessoa.nome
     dados[2].textContent = pessoa.idade + "anos"
     dados[3].textContent = pessoa.peso + "Kg"
     dados[4].textContent = pessoa.altura + "m"

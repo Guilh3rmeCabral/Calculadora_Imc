@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -9,10 +12,11 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    background-color: #7bdff2;
 }
 
 #tela-principal {
-    background-color: #fafafa;
+    background-color: #EFF7F6;
     border-radius: 10px;
     box-shadow:  0 2px 5px rgba(0, 0, 0, 0.3);
     width: 350px;
@@ -21,7 +25,9 @@ body {
 }
 
 h1 {
-    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    background-color: #B2F7EF;
     padding: 20px;
 }
 
@@ -44,4 +50,27 @@ h1 {
 }
 .form-group span {
     font-size: 12px;
+    color: rgb(238, 17, 17);
+}
+
+.form-group button {
+    border-radius: 10px;
+    border: 1px solid #F7D6E0;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 15px;   
+}
+#resultado {
+    margin: 10px;
+}
+#resultado h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#resultado p {
+    margin-bottom: 10px;
+    color: darkred;
 }
